@@ -10,16 +10,16 @@
 ##### 额～～还好我们有Node，Node大法好！
 
 ## csv2dv是什么
-**csv2dv**主要用于将csv数据转换成一些常见的可视化数据格式，并提供BD09（百度坐标系）、WGS84(GPS坐标系)、GCJ02(国测局坐标系)三种坐标系的互转。
+csv2dv主要用于将csv数据转换成一些常见的可视化数据格式，并提供BD09（百度坐标系）、WGS84(GPS坐标系)、GCJ02(国测局坐标系)三种坐标系的互转。
 >`常见地图坐标系科普`：谷歌地图、OpenStreetMap、BingMap采用的是WGS84地理坐标系（谷歌中国范围除外），谷歌中国地图、搜搜中国地图、高德地图采用的是GCJ02地理坐标系，百度采用的是BD09坐标系，天地图采用的是cgcs2000（国家大地坐标），而设备一般包含GPS芯片或者北斗芯片获取的经纬度为WGS84地理坐标系。
 
 ## 贡献内容
 
-如果你想参与**csv2dv**的共同创作，修改或添加内容，可以先[Fork](https://github.com/tutuxxx/csv2dv)本仓库，然后将修改的内容提交[Pull requests](https://github.com/tutuxxx/csv2dv/pulls)；或者[创建Issues](https://github.com/tutuxxx/csv2dv/issues/new)。
+如果你想参与csv2dv的共同创作，修改或添加内容，可以先[Fork](https://github.com/tutuxxx/csv2dv)本仓库，然后将修改的内容提交[Pull requests](https://github.com/tutuxxx/csv2dv/pulls)；或者[创建Issues](https://github.com/tutuxxx/csv2dv/issues/new)。
 
 ## 安装
 
-**csv2dv**是基于node.js的所以先要安装node.js, 推荐您使用最新版本的node.js，如果具体使用过程中遇到问题也可以[在此反馈](https://github.com/tutuxxx/csv2dv/issues/new)；具体安装步骤如下：
+csv2dv是基于node.js的所以先要安装node.js, 推荐您使用最新版本的node.js，如果具体使用过程中遇到问题也可以[在此反馈](https://github.com/tutuxxx/csv2dv/issues/new)；具体安装步骤如下：
 
 1. 安装[node.js](https://nodejs.org), 建议您采用最新版本的 node.js;
 2. 安装csv2dv：
@@ -38,15 +38,14 @@
 ```
     csv2dv.start(oFilePath,dFilePath,type);
 ```  
-
-	参数说明:
-	* **oFilePath**：csv文件，如：'./data-source/source-data'，csv文件中都要列名，具体列名保持与操作类型中的输入格式一致，列顺序不需一致；
-	* **dFilePath**：输出文件，如：'./data-result/result-data'；
-	* **type**：要进行的操作类型，如：'geoData'；type可选的值有：
+    参数说明:
+    * **oFilePath**：csv文件，如：'./data-source/source-data'，csv文件中都要列名，具体列名保持与操作类型中的输入格式一致，列顺序不需一致；
+    * **dFilePath**：输出文件，如：'./data-result/result-data'；
+    * **type**：要进行的操作类型，如：'geoData'；type可选的值有：
         + `geoData`  
-                适用场景：echarts配合百度地图做炫光图时所用的地理数据  
-                输入格式：id,lng,lat  
-                输出格式：{id:[lng,lat],id:{}..}  
+        适用场景：echarts配合百度地图做炫光图时所用的地理数据  
+        输入格式：id,lng,lat  
+        输出格式：{id:[lng,lat],id:{}..}  
         + `pointValue`  
                 适用场景：echarts配合百度地图做炫光图时所用的属性数据  
                 输入格式：id,value  

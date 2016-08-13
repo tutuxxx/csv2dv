@@ -41,30 +41,30 @@ csv2dv是基于node.js的所以先要安装node.js, 推荐您使用最新版本�
     csv2dv.start(oFilePath,dFilePath,type);
 ```
 参数说明:
-    *  `oFilePath`：csv文件，如：'./data-source/source-data'，csv文件中都要列名，具体列名保持与操作类型中的输入格式一致，列顺序不需一致；
-    *  `dFilePath`：输出文件，如：'./data-result/result-data'；
-    *  `type`：要进行的操作类型，如：'geoData'；type可选的值有：
-        * `geoData`
+    * `oFilePath`：csv文件，如：'./data-source/source-data'，csv文件中都要列名，具体列名保持与操作类型中的输入格式一致，列顺序不需一致；
+    * `dFilePath`：输出文件，如：'./data-result/result-data'；
+    * `type`：要进行的操作类型，如：'geoData'；type可选的值有：
+        + `geoData`
                 echarts配合百度地图做炫光图时所用的地理数据
                 输入格式：id,lng,lat
                 输出格式：{id:[lng,lat],id:{}..}
-        * `pointValue`
+        + `pointValue`
                 echarts配合百度地图做炫光图时所用的属性数据
                 输入格式：id,value
                 输出格式：[{name:id,value:value},{}]
-        * `odData`
+        + `odData`
                 echarts配合百度地图做迁徙图时所用的数据
                 输入格式：Oid,Did,value
                 输出格式：[[{"name":Oid},{"name":Did,"value":value}],]
-        * `routeData`
+        + `routeData`
                 mapv轨迹动画所需的数据格式,count表示从第几个点开始动画
                 输入：id,lng,lat     （同id的记录要连在一起）
                 输出：[{geo:[[lng,lat],[]],count:0}]
-        * `gcj2wgs`、`wgs2gcj`、`gcj2bd`、`wgs2bd`、`bd2gcj`
+        + `gcj2wgs`、`wgs2gcj`、`gcj2bd`、`wgs2bd`、`bd2gcj`
                 坐标系转换
                 输入：id,lng,lat
                 输出：id,lng,lat
-        * `bHeatMap`
+        + `bHeatMap`
                 百度地图添加热力图
                 输入：id,lng,lat,value
                 输出：[{lng:lng,lat:lat,count:value}]

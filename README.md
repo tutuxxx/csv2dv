@@ -35,14 +35,14 @@ csv2dv是基于node.js的所以先要安装node.js, 推荐您使用最新版本�
 1. 选择放置您的csv文件；
 
 2. 设置参数，进入csv2dv/src打开main.js：
-```
-    csv2dv.start(oFilePath,dFilePath,type);
-```  
+    ```
+        csv2dv.start(oFilePath,dFilePath,type);
+    ``` 
     参数说明:
-    * **oFilePath**：csv文件，如：'./data-source/source-data'，csv文件中都要列名，具体列名保持与操作类型中的输入格式一致，列顺序不需一致；
+    * oFilePath：csv文件，如：'./data-source/source-data'，csv文件中都要列名，具体列名保持与操作类型中的输入格式一致，列顺序不需一致；
     * **dFilePath**：输出文件，如：'./data-result/result-data'；
     * **type**：要进行的操作类型，如：'geoData'；type可选的值有：
-        + `geoData`  
+        + geoData  
         适用场景：echarts配合百度地图做炫光图时所用的地理数据  
         输入格式：id,lng,lat  
         输出格式：{id:[lng,lat],id:{}..}  

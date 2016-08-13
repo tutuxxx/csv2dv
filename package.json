@@ -1,0 +1,32 @@
+{
+  "name": "csv2dv",
+  "version": "1.0.0",
+  "description": "将csv数据转换成可视化所需的数据格式",
+  "keywords": [
+    "node",
+    "csv",
+    "data visualization",
+    "coordinate transformation"
+  ],
+  "homepage": "https://github.com/tutuxxx/csv2dv",
+  "bugs": "https://github.com/tutuxxx/csv2dv/issues",
+  "author": "ysj",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.1.90"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tutuxxx/csv2dv.git"
+  },
+  "dependencies": {
+    "csv-generate": "^1.0.0",
+    "csv-parse": "^1.1.0",
+    "csv-stringify": "^1.0.0",
+    "stream-transform": "^0.1.0"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "scripts": {}
+}
